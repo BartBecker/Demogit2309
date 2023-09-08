@@ -1,2 +1,21 @@
-hoi allemaal
-tweede regel
+<script>
+    function alcohol(){
+        console.log("hij doet het");
+        let lijstje = [4,23,12,66,33];
+        console.log( lijstje[1]);
+
+        for (let i = 0; i < lijstje.length; i++){
+            console.log("checkit: "+lijstje[i]);
+        }
+
+        let resultaat = optellen(3, 4);
+        document.getElementById("hierzo").innerHTML = ">>"+resultaat        
+    }
+
+    function optellen(getal1, getal2){
+            return getal1 + getal2;
+        }
+</script>
+<input id="invoer"><button onclick="alcohol()">klikhier</button>
+
+<h1 id="hierzo">Hierzo</h1>
